@@ -7,7 +7,7 @@ Repository for version control of the prototype of my master's thesis
     Maestría en Sistemas Interactivos Centrados en el Usuario
     Xalapa, Ver., México
 
-#### Author
+#### Author
     Epsom Enrique Segura Jaramillo
     zS18016334@estudiantes.uv.mx
     segurajaramilloepsom@gmail.com

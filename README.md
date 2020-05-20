@@ -18,12 +18,15 @@ Considerando que la tarea de escritura por computadora para personas con amputac
 
 Para esto, la técnica de interacción basada en gestos en combinación con la tecnología de sensores resulta ser la adecuada ya que es posible generar gestos específicos que pueden ser clasificados para generar algún tipo de respuesta dentro de la computadora y presentarlo al usuario. Se han realizado experimentos para la interacción de personas con algún tipo de dispacidad, en gran parte la manipulación del ratón, caso contrario para la escritura por computadora, sin embargo, los avances de los últimos años han demostrado que esta técnica, en conjunto con los gestos detectados mediante sensores y el uso de teclados virtuales específicos para la manipulación de mecanismos alternativos, permite realizar la tarea de escritura.
 
-Por otro lado, no existe un modelo de interacción establecido para llevar a cabo la tarea de escritura por computadora de personas con amputación parcial de miembro superior usando un mecanismo alternativo de entrada. Cada propuesta hace uso de sus propios mecanismos de interacción obteniendo resultados prometedores, sin embargo, la necesidad de establecer un modelo de interacción surge para la realización de nuevas propuestas que sigan un patrón de interacción capáz de ser abstracto, comprensible y replicable mediante distintas técnicas y tecnologías.
+Por otro lado, no existe un modelo de interacción establecido para llevar a cabo la tarea de escritura por computadora de personas con amputación de miembro superior usando un mecanismo alternativo de entrada. Cada propuesta hace uso de sus propios mecanismos de interacción obteniendo resultados prometedores, sin embargo, la necesidad de establecer un modelo de interacción surge para la realización de nuevas propuestas que sigan un patrón de interacción capáz de ser abstracto, comprensible y replicable mediante distintas técnicas y tecnologías.
 
 En conclusión, resulta adecuado la creación de un modelo de interacción para la tarea de escritura por computadora de personas con amputación de miembro superior, mismo que debe ser evaluado mediante un mecanismo que cubra las necesidades de uso dentro de un contexto de uso dentro de un salón de clases. Por lo tanto, esté proyecto presenta la propuesta de un modelo de interacción para este caso específico de la tarea y los usuarios objetivo.
 
 ## Modelo de interacción
-...
+El modelo de interacción para escritura de texto de personas con amputación de miembro superior propuesto busca establecer el desarrollo de mecanismos alternativos para la escritura de texto por computadora y mejorar la cantidad de palabras por minuto escritas usando este mecanismo
+ se presenta mediante un diagrama de secuencias donde, el usuario interactua con los objetos dispositivo, interfaz, controlador de teclado y autocompletado de texto. Como se observa en el diagrama, la técnica de interacción para el contexto de uso es la basada en gestos y la tecnología utilizada es el sensor IMU para este caso de estudio específico, sin embargo, la técnica y la tecnología puede ser cambiada para efecto de validación del modelo de interacción. 
+
+![Screenshot](Resources/1_modelo_interaccion.png)
 
 ## Prototipo
 ### Hardware

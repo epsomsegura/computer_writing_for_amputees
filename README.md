@@ -30,7 +30,7 @@ se presenta mediante un diagrama de secuencias donde, el usuario interactua con 
 
 ## Prototipo
 ### Hardware
-![Prototipo CMB-HC-05](Hardware/Renders_Exports/CMB-HC-05_Mockup.png)
+![Prototipo CMB-HC-05](hardware/Renders_Exports/CMB-HC-05_Mockup.png)
 
 
 ### Software

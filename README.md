@@ -1,15 +1,3 @@
-<style>
-img{
-    width: 80%;
-    height: auto;
-}
-img[src*='#center'] { 
-    display: block;
-    margin: auto;
-}
-</style>
-
-
 # COMPUTER WRITING FOR AMPUTEES
 Repositorio para el control de versiones del prototipo de mi tesis de nivel maestría. Está conformado por los siguientes directorios:
 * <strong>Hardware</strong>
@@ -63,3 +51,15 @@ se presenta mediante un diagrama de secuencias donde, el usuario interactua con 
 #### Directores
     MCC Juan Carlos Pérez Arriaga
     MCC Gerardo Contreras Vega
+
+
+<style>
+img{
+    width: 80%;
+    height: auto;
+}
+img[src*='#center'] { 
+    display: block;
+    margin: auto;
+}
+</style>

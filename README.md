@@ -7,7 +7,7 @@ Repositorio para el control de versiones del prototipo de mi tesis de nivel maes
     * <strong>Resources</strong>: Contiene los recursos (librerias) necesarios para el desarrollo de los esquemas y sketches de Arduino.
 * <strong>Software</strong>
     * Resources: 
-* <strong>Resources</strong>: Contiene los recursos necesarios para la creaciónd e este fichero README.md
+* <strong>Resources</strong>: Contiene los recursos necesarios para la creación de este fichero README.md
 
 ## Problemática
 La accesibilidad para usuarios con amputación parcial de miembro superior resulta compleja cuando se trata de la tarea de escritura de texto por computadora usando los mecanismos tradicionales. En un reporte del 2019, el INEGI menciona que los méxicanos entre 15 y 29 años hacen uso de la computadora para realizar sus actividades académicas, principalmente en niveles de educación superior, sin embargo, otro reporte realizado por la CNDH en 2019 menciona que el nivel superior es el más desatendido con respecto a la accesibilidad, lo que implica que los estudiantes con algún tipo de discapacidad no pueden ejercer su derecho a la educación al igual que estudiantes sin algún tipo de discapacidad. En promedio, una persona entre 15 y 30 años sin ninguna experiencia en mecanografía escribe 36 palabras por minuto usando un teclado tradicional, en cambio, las personas con discapacidad motriz haciendo uso de mecanismos alternativos de entrada de texto en promedio escriben entre 2.6 y 5.6 palabras por minuto, siendo una gran diferencia para realizar actividades académicas relacionadas con la escritura por computadora. 
@@ -26,7 +26,7 @@ En conclusión, resulta adecuado la creación de un modelo de interacción para 
 El modelo de interacción para escritura de texto de personas con amputación de miembro superior propuesto busca establecer el desarrollo de mecanismos alternativos para la escritura de texto por computadora y mejorar la cantidad de palabras por minuto escritas usando este mecanismo
  se presenta mediante un diagrama de secuencias donde, el usuario interactua con los objetos dispositivo, interfaz, controlador de teclado y autocompletado de texto. Como se observa en el diagrama, la técnica de interacción para el contexto de uso es la basada en gestos y la tecnología utilizada es el sensor IMU para este caso de estudio específico, sin embargo, la técnica y la tecnología puede ser cambiada para efecto de validación del modelo de interacción. 
 
-![Screenshot](Resources/1_modelo_interaccion.png)
+<div style="text-align: center"><img src="Resources/1_modelo_interaccion.png"/></div>
 
 ## Prototipo
 ### Hardware

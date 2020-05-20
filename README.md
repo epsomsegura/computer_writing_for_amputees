@@ -26,11 +26,11 @@ En conclusión, resulta adecuado la creación de un modelo de interacción para 
 El modelo de interacción para escritura de texto de personas con amputación de miembro superior propuesto busca establecer el desarrollo de mecanismos alternativos para la escritura de texto por computadora y mejorar la cantidad de palabras por minuto escritas usando este mecanismo
 se presenta mediante un diagrama de secuencias donde, el usuario interactua con los objetos dispositivo, interfaz, controlador de teclado y autocompletado de texto. Como se observa en el diagrama, la técnica de interacción para el contexto de uso es la basada en gestos y la tecnología utilizada es el sensor IMU para este caso de estudio específico, sin embargo, la técnica y la tecnología puede ser cambiada para efecto de validación del modelo de interacción. 
 
-![Modelo de interacción](Resources/1_modelo_interaccion.png#center)
+![Modelo de interacción](Resources/1_modelo_interaccion.png)
 
 ## Prototipo
 ### Hardware
-
+![Prototipo CMB-HC-05](Hardware/Renders_Exports/CMB-HC-05_Mockup.png)
 
 
 ### Software

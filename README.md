@@ -3,7 +3,7 @@ Repositorio para el control de versiones del prototipo de mi tesis de nivel maes
 * <strong>Hardware</strong>
     * <strong>Esquemas</strong>: Contiene los ficheros de los esquemáticos y prototipos del mecanismo de interacció
     * <strong>Renders_Exports</strong>: Contiene los ficheros exportados de los esquemas en formato .png y .pdf
-    * </strong>Sketchs</strong>: Contiene los sketchs creados en Arduino IDE de las pruebas de los módulos de obtención de los datos desde el sensor IMU (imu_test_mpu6050, imu_test_mpu9250) y la comunicación bluetooth con el dispositivo HC-05 (bluetooth_test), además, contiene un sketch específico para la configuración del HC-05, mismo que ha sido probado con un microcontrolador Arduino Leonardo rev 2.0 (CMB-HC-05). Por último, este repositorio contiene el proyecto completo de la unificación de los módulos de obtención de datos y comunicación bluetooth (CWFA).
+    * <strong>Sketchs</strong>: Contiene los sketchs creados en Arduino IDE de las pruebas de los módulos de obtención de los datos desde el sensor IMU (imu_test_mpu6050, imu_test_mpu9250) y la comunicación bluetooth con el dispositivo HC-05 (bluetooth_test), además, contiene un sketch específico para la configuración del HC-05, mismo que ha sido probado con un microcontrolador Arduino Leonardo rev 2.0 (CMB-HC-05). Por último, este repositorio contiene el proyecto completo de la unificación de los módulos de obtención de datos y comunicación bluetooth (CWFA).
     * <strong>Resources</strong>: Contiene los recursos (librerias) necesarios para el desarrollo de los esquemas y sketches de Arduino.
 * <strong>Software</strong>
     * Resources: 
@@ -19,6 +19,8 @@ Considerando que la tarea de escritura por computadora para personas con amputac
 Para esto, la técnica de interacción basada en gestos en combinación con la tecnología de sensores resulta ser la adecuada ya que es posible generar gestos específicos que pueden ser clasificados para generar algún tipo de respuesta dentro de la computadora y presentarlo al usuario. Se han realizado experimentos para la interacción de personas con algún tipo de dispacidad, en gran parte la manipulación del ratón, caso contrario para la escritura por computadora, sin embargo, los avances de los últimos años han demostrado que esta técnica, en conjunto con los gestos detectados mediante sensores y el uso de teclados virtuales específicos para la manipulación de mecanismos alternativos, permite realizar la tarea de escritura.
 
 Por otro lado, no existe un modelo de interacción establecido para llevar a cabo la tarea de escritura por computadora de personas con amputación parcial de miembro superior usando un mecanismo alternativo de entrada. Cada propuesta hace uso de sus propios mecanismos de interacción obteniendo resultados prometedores, sin embargo, la necesidad de establecer un modelo de interacción surge para la realización de nuevas propuestas que sigan un patrón de interacción capáz de ser abstracto, comprensible y replicable mediante distintas técnicas y tecnologías.
+
+En conclusión, resulta adecuado la creación de un modelo de interacción para la tarea de escritura por computadora de personas con amputación de miembro superior, mismo que debe ser evaluado mediante un mecanismo que cubra las necesidades de uso dentro de un contexto de uso dentro de un salón de clases. Por lo tanto, esté proyecto presenta la propuesta de un modelo de interacción para este caso específico de la tarea y los usuarios objetivo.
 
 ## Modelo de interacción
 ...

@@ -1,3 +1,4 @@
 */.DS_Store
+*/__pycache__
 *.zip
 software/CWFA_Keyboard/node_modules/electron/*

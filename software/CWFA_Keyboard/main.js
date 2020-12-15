@@ -15,12 +15,14 @@ function createWindow () {
   let width = display.workArea.width;
   let height = display.workArea.height;
   let win = new BrowserWindow({
+    frame: false,
+    enableRemoteModule: true,
     alwaysOnTop: true,
     transparent:true,
     width: 800,
-    height: 300,
+    height: 320,
     x: (width - 800)/2,
-    y: height + 300 + 5,
+    y: height + 320 + 5,
     webPreferences: {
       nodeIntegration: true
     }
@@ -30,9 +32,9 @@ function createWindow () {
   win.loadFile('index.html')
   // win.webContents.openDevTools()
 
-  // execute('python ../interface_test/main.py',(output)=>{
-  //   console.log(output);
-  // });
+  execute('python ../interface_test/main.py',(output)=>{
+    console.log(output);
+  });
 }
 
 app.whenReady().then(createWindow);

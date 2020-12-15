@@ -19,6 +19,7 @@
       dialect: 'mysql',
       logging: false
     });
+    const remote = require('electron').remote;
   </script>
   <script src="assets/js/cwfa.js"></script>
 </head>
@@ -28,12 +29,14 @@
   <div class="container">
     <div class="row">
       <div class="col s12">
-        
+        <button title="Cerrar" class="btn-floating btn-small waves-effect waves-light red right" style="margin: auto 2px !important;" id="btn_close"><i class="far fa-times-circle"></i></button>
+        <button title="Ayuda" data-target="mdl_help" class="btn-floating btn-small modal-trigger waves-effect waves-light orange right" style="margin: auto 2px !important;"><i class="far fa-question-circle"></i></button>
+        <button title="Diccionario personalizado" data-target="mdl_dict" class="btn-floating btn-small modal-trigger waves-effect waves-light blue right" style="margin: auto 2px !important;" id="btn_custom_words"><i class="far fa-list-alt"></i></button>
       </div>
     </div>
     <div class="row" id="results">
       <div class="col s12" id="result_row">
-        <div class="blue word btn"></div>
+        <div class="blue word btn-small"></div>
       </div>
     </div>
     <div class="row" id="numbers">
@@ -99,6 +102,61 @@
         <div class="col s6 green btn space">_</div>
         <div class="col s1 green btn btn_dot">.</div>
         <div class="col s1 green btn btn_at">@</div>
+      </div>
+    </div>
+
+    <!-- Modal ayudas -->
+    <div id="mdl_help" class="modal bottom-sheet" >
+      <div class="modal-content" style="padding: 5px;">
+        <h5>Gestos para interactuar con el teclado virtual</h5>
+        <div class="row">
+          <div class="col s12">
+            <table id="tbl_gestures">
+              <tbody>
+                <tr>
+                  <td align="center">
+                    <img class="img_gesture" src="assets/img/gestures/2_Arriba.gif" alt=""> <br> <span>Gesto Arriba</span> <br> <small>Navegación del teclado hacia arriba</small>
+                  </td>
+                  <td align="center">
+                    <img class="img_gesture" src="assets/img/gestures/3_Derecha.gif" alt=""> <br> <span>Gesto Derecha</span> <br> <small>Nagevegación en el teclado hacia la derecha</small>
+                  </td>
+                  <td align="center">
+                    <img class="img_gesture" src="assets/img/gestures/5_seleccion.gif" alt=""> <br> <span>Gesto Selección</span> <br> <small>Selección del elemento seleccionado</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <img class="img_gesture" src="assets/img/gestures/1_Abajo.gif" alt=""> <br> <span>Gesto Abajo</span> <br> <small>Navegación en el teclado hacia abajo</small>
+                  </td>
+                  <td align="center">
+                    <img class="img_gesture" src="assets/img/gestures/4_izquierda.gif" alt=""> <br> <span>Gesto Izquierda</span> <br> <small>Navegación del teclado hacia la izquierda</small>
+                  </td>
+                  <td align="center">
+                    <img class="img_gesture" src="assets/img/gestures/6_borrado.gif" alt=""> <br> <span>Gesto Borrado</span> <br> <small>Borrado del último caracter ingresado</small>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div>
+    <!-- Modal Diccionario -->
+    <div id="mdl_dict" class="modal bottom-sheet" >
+      <div class="modal-content" style="padding: 5px;">
+        <h5>Diccionario personalizado <i class="fas fa-info-circle" id="info_btn"></i></h5>
+        <p align="justify" id="txt_info">
+          El diccionario personalizado almacena las palabras inexistentes en el diccionario preestablecido (idioma español) de esta aplicación. Las palabras se agregan al terminar la escritura y seleccionar el recuadro de la lista de palabras para autocompletado y para su posterior uso aparecen en esta lista. Puede eliminar las palabras agregadas al diccionario haciendo clic en el ícono <i class="fas fa-trash"></i> ubicado a la derecha de cada palabra personalizada que se presenta a continuación:
+        </p>
+        <div id="custom_words" style="display: block;">
+          <span class="badge_c">Palabra <i class="fas fa-trash btn_delete_custom_word" id=""></i></span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
       </div>
     </div>
   </div>

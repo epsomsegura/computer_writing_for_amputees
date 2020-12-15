@@ -157,7 +157,7 @@ function selectGesture() {
         $('.word').html('');
     }
     // TOGGLE SYMBOLS
-    else if($('.active').hasClass('btn_symbols')){
+    else if ($('.active').hasClass('btn_symbols')) {
         isSymbols();
     }
     // TOGGLE UPPERCASE
@@ -227,9 +227,30 @@ async function findPossibleWords(searchWord) {
 
     $('.btn_result').remove();
     $.each(list_words, function (i, val) {
-        div = '<div class="btn s1 green btn_result">' + val + '</div>';
+        div = '<div class="s1 green btn-small btn_result">' + val + '</div>';
         $('#result_row').append(div);
-    })
+    });
+}
+
+async function allCustomWords() {
+    var custom_words = await Personalizado.findAll({ order: [['palabra', 'ASC']] });
+    words_list = '';
+    $.each(custom_words, function (i, val) {
+        words_list += '<span class="badge_c" id="cus_word_'+val.dataValues.id+'">' + val.dataValues.palabra + ' <i class="fas fa-trash btn_delete_custom_word" id="' + val.dataValues.id + '"></i></span>';
+    });
+    $('#custom_words').html(words_list);
+}
+
+async function deleteCustomWord(id_cw) {
+    var result = await Personalizado.destroy({ where: { id: id_cw } })
+        .then(function (rowDeleted) { // rowDeleted will return number of rows deleted
+            if (rowDeleted === 1) {
+                M.toast({ html: 'Palabra eliminada del diccionario personalizado' });
+                $('#cus_word_'+id_cw).remove();
+            }
+        }, function (err) {
+            console.log(err);
+        });
 }
 
 async function saveNewWord() {
@@ -297,6 +318,7 @@ $(document).ready(function () {
     $.each(char_keys, function (i, val) {
         $(this).html($(this).attr('data-mayus'));
     });
+    M.AutoInit();
 });
 
 $(document).on('mouseover', '.btn', function () {
@@ -326,4 +348,21 @@ socket.on('disconnect', function () {
 socket.on('interaction', function (data) {
     gestureType(data);
     socket.close();
+});
+
+
+// GUI EVENTS
+$(document).on('click', '#btn_close', function () {
+    var window = remote.getCurrentWindow();
+    window.close();
+});
+
+$(document).on('click','#info_btn',function(){
+    $('#txt_info').slideToggle();
+});
+$(document).on('click', '#btn_custom_words', function () {
+    allCustomWords();
+});
+$(document).on('click', '.btn_delete_custom_word', function () {
+    deleteCustomWord($(this).attr('id'));
 });

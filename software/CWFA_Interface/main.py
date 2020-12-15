@@ -1,14 +1,14 @@
 from interface import interface as i
 from device import device as device
 import threading, sys
-from pynput import keyboard
+# from pynput import keyboard
 from flask import Flask, request
 from flask_socketio import Namespace, SocketIO, emit
 
 app = Flask(__name__)
 socketio = SocketIO(app, async_handler=True)
 
-class keylogger:
+class cwfa_interface:
     gesture = 'standby'
     def __init__(self):
         print('Keylogger')
@@ -26,37 +26,37 @@ class keylogger:
         socketio.on_namespace(i('/'))
         socketio.run(app)
 
-    def keyPress(self,key):
-        self.gesture='standby'
-        if(hasattr(key,'char')):
-            if(key.char=="a"):
-                self.gesture="left"
-            elif(key.char=="s"):
-                self.gesture="down"
-            elif(key.char=="d"):
-                self.gesture="right"
-            elif(key.char=="w"):
-                self.gesture="up"
-            elif(key.char=="c"):
-                self.gesture="select"
-            elif(key.char=="x"):
-                self.gesture="erase"
-            elif(key.char=="p"):
-                sys.exit(0)
-            else:
-                self.gesture='standby'
+    # def keyPress(self,key):
+    #     self.gesture='standby'
+    #     if(hasattr(key,'char')):
+    #         if(key.char=="a"):
+    #             self.gesture="left"
+    #         elif(key.char=="s"):
+    #             self.gesture="down"
+    #         elif(key.char=="d"):
+    #             self.gesture="right"
+    #         elif(key.char=="w"):
+    #             self.gesture="up"
+    #         elif(key.char=="c"):
+    #             self.gesture="select"
+    #         elif(key.char=="x"):
+    #             self.gesture="erase"
+    #         elif(key.char=="p"):
+    #             sys.exit(0)
+    #         else:
+    #             self.gesture='standby'
         
-        f = open("gesture.txt", "w")
-        f.write(self.gesture)
-        f.close()
-        print(self.gesture)
+    #     f = open("gesture.txt", "w")
+    #     f.write(self.gesture)
+    #     f.close()
+    #     print(self.gesture)
     
-    def keyRelease(self,key):
-        self.gesture='standby'
-        f = open("gesture.txt", "w")
-        f.write("standby")
-        f.close()
+    # def keyRelease(self,key):
+    #     self.gesture='standby'
+    #     f = open("gesture.txt", "w")
+    #     f.write("standby")
+    #     f.close()
 
 
 if __name__ == '__main__':
-    k=keylogger()
+    c=cwfa_interface()

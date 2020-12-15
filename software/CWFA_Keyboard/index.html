@@ -20,7 +20,7 @@
       logging: false
     });
     const remote = require('electron').remote;
-  </script>
+    </script>
   <script src="assets/js/cwfa.js"></script>
 </head>
 
@@ -36,7 +36,7 @@
     </div>
     <div class="row" id="results">
       <div class="col s12" id="result_row">
-        <div class="blue word btn-small"></div>
+        <div class="blue word btn"></div>
       </div>
     </div>
     <div class="row" id="numbers">
@@ -107,9 +107,12 @@
 
     <!-- Modal ayudas -->
     <div id="mdl_help" class="modal bottom-sheet" >
-      <div class="modal-content" style="padding: 5px;">
+      <div class="modal-content">
         <h5>Gestos para interactuar con el teclado virtual</h5>
         <div class="row">
+          <div class="col s12">
+            Los gestos para navegación en el teclado virtual se ejecutan mediante el el brazalete colocado en el antebrazo, mientras que los gestos de selección se ejecutan usando el dispositivo complementario. El brazalete cuenta con un LED indicador en color rojo que se enciende al regresar a la posición inicial de navegación.
+          </div>
           <div class="col s12">
             <table id="tbl_gestures">
               <tbody>
@@ -139,6 +142,20 @@
             </table>
           </div>
         </div>
+        <hr>
+        <h5>Modo de uso</h5>
+        <div class="row">
+          <div class="col s12">
+            <ol>
+              <li>Colocar el brazalete en el antebrazo para llevar a cabo los gestos de navegación</li>
+              <li>Colocar el puntero en el software de entrada de texto</li>
+              <li>Navegar en el teclado virtual y elegir un elemento con el gesto de selección usando el dispositivo</li>
+              <li>Borrar el último caracter ingresado mediante el gesto de borrado usando el dispositivo</li>
+            </ol>
+            <small>* Por cada gesto de navegación es necesario regresar a la posición inicial para que el prototipo pueda detectar un nuevo evento</small>
+          </div>
+        </div>
+        <hr>
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
@@ -146,7 +163,7 @@
     </div>
     <!-- Modal Diccionario -->
     <div id="mdl_dict" class="modal bottom-sheet" >
-      <div class="modal-content" style="padding: 5px;">
+      <div class="modal-content">
         <h5>Diccionario personalizado <i class="fas fa-info-circle" id="info_btn"></i></h5>
         <p align="justify" id="txt_info">
           El diccionario personalizado almacena las palabras inexistentes en el diccionario preestablecido (idioma español) de esta aplicación. Las palabras se agregan al terminar la escritura y seleccionar el recuadro de la lista de palabras para autocompletado y para su posterior uso aparecen en esta lista. Puede eliminar las palabras agregadas al diccionario haciendo clic en el ícono <i class="fas fa-trash"></i> ubicado a la derecha de cada palabra personalizada que se presenta a continuación:
@@ -154,6 +171,7 @@
         <div id="custom_words" style="display: block;">
           <span class="badge_c">Palabra <i class="fas fa-trash btn_delete_custom_word" id=""></i></span>
         </div>
+        <hr>
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>

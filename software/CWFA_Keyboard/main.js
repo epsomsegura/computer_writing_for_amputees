@@ -22,7 +22,7 @@ function createWindow () {
     width: 800,
     height: 320,
     x: (width - 800)/2,
-    y: height + 320 + 5,
+    y: height - 300,
     webPreferences: {
       nodeIntegration: true
     }
@@ -31,8 +31,9 @@ function createWindow () {
   // and load the index.html of the app.
   win.loadFile('index.html')
   // win.webContents.openDevTools()
-
+ 
   execute('python ../interface_test/main.py',(output)=>{
+    console.log("Python CMD");
     console.log(output);
   });
 }

@@ -1,3 +1,6 @@
+// SEQUELIZE CONENCTION
+sequelize.authenticate().catch(err => {M.toast({ html: 'La conexión con la base de datos no se pudo llevar a cabo, verifique que el servicio esté inicializado.' });});
+
 // MODELS
 const Diccionario = sequelize.define('Diccionario', {
     // Model attributes are defined here
@@ -227,9 +230,9 @@ async function findPossibleWords(searchWord) {
 
     $('.btn_result').remove();
     $.each(list_words, function (i, val) {
-        div = '<div class="s1 green btn-small btn_result">' + val + '</div>';
+        div = '<div class="btn s1 green btn_result">' + val + '</div>';
         $('#result_row').append(div);
-    });
+    })
 }
 
 async function allCustomWords() {

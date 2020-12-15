@@ -2,3 +2,25 @@
 */__pycache__
 *.zip
 software/CWFA_Keyboard/node_modules/electron/*
+Resources/Teclado/GIF_Gestures.aep
+Resources/Teclado/Renders/gestures/1_Abajo.gif
+Resources/Teclado/Renders/gestures/2_Arriba.gif
+Resources/Teclado/Renders/gestures/3_Derecha.gif
+Resources/Teclado/Renders/gestures/4_izquierda.gif
+Resources/Teclado/Renders/gestures/5_borrado.gif
+Resources/Teclado/Renders/gestures/5_seleccion.gif
+Resources/Teclado/arrow_1.png
+Resources/Teclado/arrow_down.png
+Resources/Teclado/boton_op1.png
+Resources/Teclado/boton.png
+Resources/Teclado/brazo 2.png
+Resources/Teclado/Sin-título-1_0000_Capa-2.png
+Resources/Teclado/Sin-título-1_0001_Capa-1.png
+Resources/Teclado/wire.png
+.DS_Store
+Resources/Teclado/Almacenamiento automático de Adobe After Effects/GIF_Gestures almacenamiento automático 1.aep
+Resources/Teclado/Almacenamiento automático de Adobe After Effects/GIF_Gestures almacenamiento automático 2.aep
+Resources/Teclado/GIF_Gestures.aep registros/AE 14-12-20 17-25-32 GMT-6.txt
+Resources/Teclado/GIF_Gestures.aep registros/AE 14-12-20 17-30-02 GMT-6.txt
+hardware/.DS_Store
+.DS_Store

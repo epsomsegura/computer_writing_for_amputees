@@ -9,7 +9,7 @@
     "jquery": "^3.5.1",
     "materialize-css": "^1.0.0-rc.2",
     "mysql2": "^2.1.0",
-    "sequelize": "^6.3.3",
+    "sequelize": "^6.29.0",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
